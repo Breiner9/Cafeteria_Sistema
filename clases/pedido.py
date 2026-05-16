@@ -18,10 +18,10 @@ class Pedido():
         self.__detalles.remove(detalle)
 
     def calcular_total(self):
-         total = 0
-         for detalle in self.__detalles:
-             total = total + detalle.calcular_subtotal()
-             return total
+        total = 0
+        for detalle in self.__detalles:
+                total = total + detalle.calcular_subtotal()
+        return total
 
     def mostrar_resumen(self):
         print(f"Fecha: {self.__fecha}")
@@ -31,12 +31,12 @@ class Pedido():
         if self.__mesa is None:
             print("Para llevar")
         else:
-            print(f"{self.__mesa.getnumero()}")
+            print(f"Mesa: {self.__mesa.getnumero()}")
 
         for detalle in self.__detalles:
-            print(f"{detalle.getproducto().getnombre()} {detalle.getcantidad()} ${detalle.calcular_subtotal()}")
+            print(f"Detalles: {detalle.getproducto().getnombre()} {detalle.getcantidad()} ${detalle.calcular_subtotal()}")
 
-        print(f"{self.calcular_total()}")
+        print(f"Total: ${self.calcular_total()}")
 
 #====================================================================
 # GETTERS Y SETTERS

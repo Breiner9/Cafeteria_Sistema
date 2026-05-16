@@ -11,3 +11,7 @@ class Servicio_pedido():
     def listar_pedidos(self):
         for pedido in self.__pedidos:
             pedido.mostrar_resumen()
+
+#Creo un getter que me ayudará a gestionar mejor mis pedidos en la consola
+    def getpedidos(self):
+        return self.__pedidos

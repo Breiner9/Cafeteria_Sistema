@@ -13,15 +13,16 @@ class Pago():
         if self.__monto >= self.__pedido.calcular_total():
             cambio = self.__monto - self.__pedido.calcular_total() 
             print("¡¡¡Pago Exitoso!!!")
-            print(f"{cambio}")
+            print(f"${cambio}")
+            
         else: 
             print("No se pudo procesar, intente nuevamente")
-    
+            
     def generar_recibo(self):
         print(f"Fecha: {self.__fecha}")
-        print(f"Monto: {self.__monto}")
+        print(f"Monto: ${self.__monto}")
         print(f"Método de Pago: {self.__metodo_pago}")
-        print(f"Total: {self.__pedido.calcular_total()}")
+        print(f"Total: ${self.__pedido.calcular_total()}")
 
 #====================================================================
 # GETTERS Y SETTERS

@@ -10,7 +10,7 @@ class Producto():
         return self.__precio_base 
 
     def mostrar_producto(self):
-        print(f"Nombre: {self.getnombre()}  Precio: ${self.calcular_precio()} Categoría: {self.categoria().getnombre()}")
+        print(f"Nombre: {self.getnombre()}  Precio: ${self.calcular_precio()} Categoría: {self.getcategoria().getnombre()}")
 #====================================================================
 # GETTERS Y SETTERS
 #====================================================================

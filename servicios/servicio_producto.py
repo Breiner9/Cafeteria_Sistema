@@ -16,3 +16,8 @@ class Servicio_producto():
     def listar(self):
         for producto in self.__productos:
             producto.mostrar_producto()
+
+#Creo un getter para poder acceder a mis productos en el menú
+    def getproductos(self):
+        return self.__productos
+

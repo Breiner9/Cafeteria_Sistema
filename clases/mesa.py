@@ -14,9 +14,9 @@ class Mesa():
 
     def mostrar_estado(self):
         if self.__estado == True:
-            print("Disponible")
+            print(f"Mesa {self.__numero} Disponible")
         else:   
-            print("No Disponible")
+            print(f"Mesa {self.__numero} No Disponible")
 
 #====================================================================
 # GETTERS Y SETTERS
