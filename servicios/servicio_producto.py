@@ -1,5 +1,5 @@
 #Creamos la clase servicio_producto que va a gestionar listas 
-class servicio_producto():
+class Servicio_producto():
     def __init__(self):
         self.__productos = []
 
