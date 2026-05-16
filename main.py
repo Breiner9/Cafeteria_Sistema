@@ -1,7 +1,7 @@
-#Importamos todas nuestras clases para poder correr nuestro programa 
+#Importamos nuestro menu para poder correr nuestro programa 
 from utilidades.menu_consola import Menu_consola
 
-#Ejecuta el programa en orden que se quiere trabajar
+#Ejecuta el programa y podemos ver el orden en el que se puede trabajar 
 def main():
     menu = Menu_consola()
     menu.ejecutar()

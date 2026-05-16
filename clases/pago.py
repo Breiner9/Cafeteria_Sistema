@@ -1,3 +1,4 @@
+#Importamos la clase datetime para poner la fecha actual automáticamente
 from datetime import datetime 
 
 #Creamos la clase pago para procesar nuestros pagos 
@@ -13,7 +14,7 @@ class Pago():
         if self.__monto >= self.__pedido.calcular_total():
             cambio = self.__monto - self.__pedido.calcular_total() 
             print("¡¡¡Pago Exitoso!!!")
-            print(f"${cambio}")
+            print(f"Cambio: ${cambio}")
             
         else: 
             print("No se pudo procesar, intente nuevamente")
